@@ -29,6 +29,7 @@ namespace WindowsFormsApp2
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(POS_FRM));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Good4 = new System.Windows.Forms.Button();
             this.Good3 = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@ namespace WindowsFormsApp2
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Highlight;
             this.groupBox1.Controls.Add(this.Good4);
             this.groupBox1.Controls.Add(this.Good3);
             this.groupBox1.Controls.Add(this.Good2);
@@ -67,26 +69,31 @@ namespace WindowsFormsApp2
             // 
             // Good4
             // 
+            this.Good4.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Good4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Good4.Location = new System.Drawing.Point(139, 204);
             this.Good4.Name = "Good4";
             this.Good4.Size = new System.Drawing.Size(98, 138);
             this.Good4.TabIndex = 3;
             this.Good4.Text = "Good4";
-            this.Good4.UseVisualStyleBackColor = true;
+            this.Good4.UseVisualStyleBackColor = false;
             this.Good4.Click += new System.EventHandler(this.Good4_Click);
             // 
             // Good3
             // 
+            this.Good3.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Good3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Good3.Location = new System.Drawing.Point(19, 204);
             this.Good3.Name = "Good3";
             this.Good3.Size = new System.Drawing.Size(98, 138);
             this.Good3.TabIndex = 2;
             this.Good3.Text = "Good3";
-            this.Good3.UseVisualStyleBackColor = true;
+            this.Good3.UseVisualStyleBackColor = false;
             this.Good3.Click += new System.EventHandler(this.Good3_Click);
             // 
             // Good2
             // 
+            this.Good2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Good2.Location = new System.Drawing.Point(139, 40);
             this.Good2.Name = "Good2";
             this.Good2.Size = new System.Drawing.Size(98, 138);
@@ -97,19 +104,22 @@ namespace WindowsFormsApp2
             // 
             // Good1
             // 
+            this.Good1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Good1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Good1.Location = new System.Drawing.Point(19, 40);
             this.Good1.Name = "Good1";
             this.Good1.Size = new System.Drawing.Size(98, 138);
             this.Good1.TabIndex = 0;
             this.Good1.Text = "Good1";
-            this.Good1.UseVisualStyleBackColor = true;
+            this.Good1.UseVisualStyleBackColor = false;
             this.Good1.Click += new System.EventHandler(this.Good1_Click);
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.LightCoral;
             this.groupBox2.Controls.Add(this.TotalPrice_txt);
             this.groupBox2.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox2.Location = new System.Drawing.Point(291, 12);
+            this.groupBox2.Location = new System.Drawing.Point(285, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(302, 178);
             this.groupBox2.TabIndex = 1;
@@ -118,8 +128,8 @@ namespace WindowsFormsApp2
             // 
             // TotalPrice_txt
             // 
-            this.TotalPrice_txt.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.TotalPrice_txt.ForeColor = System.Drawing.SystemColors.Window;
+            this.TotalPrice_txt.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.TotalPrice_txt.ForeColor = System.Drawing.SystemColors.InfoText;
             this.TotalPrice_txt.Location = new System.Drawing.Point(6, 63);
             this.TotalPrice_txt.Multiline = true;
             this.TotalPrice_txt.Name = "TotalPrice_txt";
@@ -129,38 +139,44 @@ namespace WindowsFormsApp2
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.LightCoral;
             this.groupBox3.Controls.Add(this.CreditCard_Pay);
             this.groupBox3.Controls.Add(this.CashPay);
             this.groupBox3.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox3.Location = new System.Drawing.Point(291, 222);
+            this.groupBox3.Location = new System.Drawing.Point(285, 253);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(302, 161);
+            this.groupBox3.Size = new System.Drawing.Size(302, 130);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "付款方式";
             // 
             // CreditCard_Pay
             // 
+            this.CreditCard_Pay.BackColor = System.Drawing.Color.IndianRed;
+            this.CreditCard_Pay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CreditCard_Pay.Location = new System.Drawing.Point(149, 64);
             this.CreditCard_Pay.Name = "CreditCard_Pay";
             this.CreditCard_Pay.Size = new System.Drawing.Size(147, 60);
             this.CreditCard_Pay.TabIndex = 1;
             this.CreditCard_Pay.Text = "信用卡(九折)";
-            this.CreditCard_Pay.UseVisualStyleBackColor = true;
+            this.CreditCard_Pay.UseVisualStyleBackColor = false;
             this.CreditCard_Pay.Click += new System.EventHandler(this.CreditCard_Pay_Click);
             // 
             // CashPay
             // 
+            this.CashPay.BackColor = System.Drawing.Color.IndianRed;
+            this.CashPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CashPay.Location = new System.Drawing.Point(6, 64);
             this.CashPay.Name = "CashPay";
             this.CashPay.Size = new System.Drawing.Size(127, 60);
             this.CashPay.TabIndex = 0;
             this.CashPay.Text = "現金付款";
-            this.CashPay.UseVisualStyleBackColor = true;
+            this.CashPay.UseVisualStyleBackColor = false;
             this.CashPay.Click += new System.EventHandler(this.CashPay_Click);
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.SystemColors.Highlight;
             this.groupBox4.Controls.Add(this.button1);
             this.groupBox4.Controls.Add(this.Cart4_txt);
             this.groupBox4.Controls.Add(this.Cart3_txt);
@@ -176,59 +192,61 @@ namespace WindowsFormsApp2
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(14, 220);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(283, 57);
             this.button1.TabIndex = 4;
             this.button1.Text = "清空我的購物清單";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Cart4_txt
             // 
-            this.Cart4_txt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Cart4_txt.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Cart4_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Cart4_txt.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Cart4_txt.Location = new System.Drawing.Point(14, 159);
             this.Cart4_txt.Multiline = true;
             this.Cart4_txt.Name = "Cart4_txt";
             this.Cart4_txt.ReadOnly = true;
-            this.Cart4_txt.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Cart4_txt.Size = new System.Drawing.Size(277, 33);
             this.Cart4_txt.TabIndex = 3;
             // 
             // Cart3_txt
             // 
-            this.Cart3_txt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Cart3_txt.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Cart3_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Cart3_txt.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Cart3_txt.Location = new System.Drawing.Point(14, 120);
             this.Cart3_txt.Multiline = true;
             this.Cart3_txt.Name = "Cart3_txt";
             this.Cart3_txt.ReadOnly = true;
-            this.Cart3_txt.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Cart3_txt.Size = new System.Drawing.Size(277, 33);
             this.Cart3_txt.TabIndex = 2;
             // 
             // Cart2_txt
             // 
-            this.Cart2_txt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Cart2_txt.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Cart2_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Cart2_txt.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Cart2_txt.Location = new System.Drawing.Point(14, 81);
             this.Cart2_txt.Multiline = true;
             this.Cart2_txt.Name = "Cart2_txt";
             this.Cart2_txt.ReadOnly = true;
-            this.Cart2_txt.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Cart2_txt.Size = new System.Drawing.Size(277, 33);
             this.Cart2_txt.TabIndex = 1;
             // 
             // Cart1_txt
             // 
-            this.Cart1_txt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Cart1_txt.BackColor = System.Drawing.SystemColors.Highlight;
+            this.Cart1_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Cart1_txt.Font = new System.Drawing.Font("微軟正黑體", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.Cart1_txt.Location = new System.Drawing.Point(14, 42);
             this.Cart1_txt.Multiline = true;
             this.Cart1_txt.Name = "Cart1_txt";
             this.Cart1_txt.ReadOnly = true;
-            this.Cart1_txt.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Cart1_txt.Size = new System.Drawing.Size(277, 33);
             this.Cart1_txt.TabIndex = 0;
             // 
@@ -236,7 +254,9 @@ namespace WindowsFormsApp2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(892, 388);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(892, 461);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
