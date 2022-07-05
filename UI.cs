@@ -101,5 +101,17 @@ namespace WindowsFormsApp2
             splitContainer1.Panel2.Controls.Add(LoanForm);
             LoanForm.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Screen Screen = new Screen();
+            splitContainer1.Panel2.Controls.Clear();
+
+
+           Screen.TopLevel = false;
+            splitContainer1.Panel2.Controls.Add(Screen);
+            Screen.Show();
+        }
+       
     }
 }

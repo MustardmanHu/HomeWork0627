@@ -40,6 +40,7 @@ namespace WindowsFormsApp2
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -63,7 +64,7 @@ namespace WindowsFormsApp2
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(44, 112);
+            this.button2.Location = new System.Drawing.Point(44, 99);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(345, 34);
             this.button2.TabIndex = 1;
@@ -74,7 +75,7 @@ namespace WindowsFormsApp2
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button3.Location = new System.Drawing.Point(44, 194);
+            this.button3.Location = new System.Drawing.Point(44, 175);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(345, 34);
             this.button3.TabIndex = 2;
@@ -85,7 +86,7 @@ namespace WindowsFormsApp2
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button4.Location = new System.Drawing.Point(44, 276);
+            this.button4.Location = new System.Drawing.Point(44, 237);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(345, 34);
             this.button4.TabIndex = 3;
@@ -96,7 +97,7 @@ namespace WindowsFormsApp2
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button5.Location = new System.Drawing.Point(44, 358);
+            this.button5.Location = new System.Drawing.Point(44, 370);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(345, 34);
             this.button5.TabIndex = 4;
@@ -107,7 +108,7 @@ namespace WindowsFormsApp2
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button6.Location = new System.Drawing.Point(44, 443);
+            this.button6.Location = new System.Drawing.Point(44, 434);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(345, 34);
             this.button6.TabIndex = 5;
@@ -122,6 +123,7 @@ namespace WindowsFormsApp2
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.button7);
             this.splitContainer1.Panel1.Controls.Add(this.button1);
             this.splitContainer1.Panel1.Controls.Add(this.button6);
             this.splitContainer1.Panel1.Controls.Add(this.button2);
@@ -177,6 +179,17 @@ namespace WindowsFormsApp2
             this.label1.TabIndex = 0;
             this.label1.Text = "這是我的C#作業,它很美麗對巴";
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("微軟正黑體", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button7.Location = new System.Drawing.Point(44, 301);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(345, 34);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "ScreenProtect";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -213,5 +226,6 @@ namespace WindowsFormsApp2
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.SplitContainer splitContainer2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button7;
     }
 }
