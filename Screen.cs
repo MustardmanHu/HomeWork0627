@@ -27,7 +27,7 @@ namespace WindowsFormsApp2
             if (Start == 0)
             {
                 Start = 1;
-                Pic_方向 = ran.Next(1, 5);
+                Pic_方向 = 2;
                 this.Cursor = new Cursor(Cursor.Current.Handle);
                 x = Cursor.Position.X;
                 y = Cursor.Position.Y;
@@ -35,8 +35,8 @@ namespace WindowsFormsApp2
                 pictureBox1.Left = 0;
             }
 
-             if (this.pictureBox1.Left <= 0 || this.pictureBox1.Left >= this.Width - 1.2*this.pictureBox1.Width ||
-                 this.pictureBox1.Top <= 0 || this.pictureBox1.Top >= this.Height - 2*this.pictureBox1.Height)
+             if (this.pictureBox1.Left <= 0 || this.pictureBox1.Left >= this.Width - this.pictureBox1.Width ||
+                 this.pictureBox1.Top <= 0 || this.pictureBox1.Top >= this.Height - this.pictureBox1.Height)
             //彈到邊框的if條件式
             {
                 if (Pic_方向 == 1)

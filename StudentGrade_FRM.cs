@@ -206,6 +206,10 @@ namespace WindowsFormsApp2
             Data = $"";
             Grade_txt.Text = $"";
             button3.Enabled = false;
+            button1.Enabled = true;
+            button2.Enabled = true;
+            button5.Enabled = true;
+            統計_txt.Text = "";
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -231,7 +235,10 @@ namespace WindowsFormsApp2
             //string resultM = $"總分:{WholeMScore}\r\n平均:{AVGMScore}\r\n最高分:{HMScore}\r\n最低分:{LMScore}";
             統計_txt.Text = $"總分:{總分}\r\n平均:{平均}\r\n最高分:{最高分}\r\n最低分:{最低分}\r\n";
 
-
+            button1.Enabled = false;
+            button2.Enabled = false;
+            button4.Enabled = true;
+            button5.Enabled = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
