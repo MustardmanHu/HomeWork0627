@@ -112,6 +112,10 @@ namespace WindowsFormsApp2
             splitContainer1.Panel2.Controls.Add(Screen);
             Screen.Show();
         }
-       
+
+        private void UI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

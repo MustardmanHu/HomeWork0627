@@ -60,9 +60,9 @@ namespace WindowsFormsApp2
             this.groupBox1.Controls.Add(this.Good2);
             this.groupBox1.Controls.Add(this.Good1);
             this.groupBox1.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(1, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(252, 371);
+            this.groupBox1.Size = new System.Drawing.Size(247, 371);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "商品列表";
@@ -119,7 +119,7 @@ namespace WindowsFormsApp2
             this.groupBox2.BackColor = System.Drawing.Color.LightCoral;
             this.groupBox2.Controls.Add(this.TotalPrice_txt);
             this.groupBox2.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox2.Location = new System.Drawing.Point(285, 12);
+            this.groupBox2.Location = new System.Drawing.Point(264, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(302, 178);
             this.groupBox2.TabIndex = 1;
@@ -143,7 +143,7 @@ namespace WindowsFormsApp2
             this.groupBox3.Controls.Add(this.CreditCard_Pay);
             this.groupBox3.Controls.Add(this.CashPay);
             this.groupBox3.Font = new System.Drawing.Font("微軟正黑體", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox3.Location = new System.Drawing.Point(285, 253);
+            this.groupBox3.Location = new System.Drawing.Point(264, 253);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(302, 130);
             this.groupBox3.TabIndex = 2;
@@ -183,7 +183,7 @@ namespace WindowsFormsApp2
             this.groupBox4.Controls.Add(this.Cart2_txt);
             this.groupBox4.Controls.Add(this.Cart1_txt);
             this.groupBox4.Font = new System.Drawing.Font("微軟正黑體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox4.Location = new System.Drawing.Point(593, 12);
+            this.groupBox4.Location = new System.Drawing.Point(572, 12);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(297, 294);
             this.groupBox4.TabIndex = 3;
@@ -256,7 +256,7 @@ namespace WindowsFormsApp2
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(892, 461);
+            this.ClientSize = new System.Drawing.Size(869, 461);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
